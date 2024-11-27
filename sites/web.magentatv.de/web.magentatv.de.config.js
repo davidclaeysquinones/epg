@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const fetch = require('node-fetch')
+const { upperCase } = require('lodash')
 
 let X_CSRFTOKEN
 let COOKIE
@@ -29,7 +30,7 @@ module.exports = {
         offset: 0,
         properties: [
           {
-            include: 'endtime,genres,id,name,starttime,channelid,pictures,introduce',
+            include: 'endtime,genres,id,name,starttime,channelid,pictures,introduce,subName,seasonNum,subNum,cast,country,producedate,externalIds',
             name: 'playbill'
           }
         ],
@@ -47,10 +48,19 @@ module.exports = {
       programs.push({
         title: item.name,
         description: item.introduce,
-        icon: parseIcon(item),
+        image: parseImage(item),
         category: parseCategory(item),
         start: parseStart(item),
-        stop: parseStop(item)
+        stop: parseStop(item),
+        sub_title: item.subName,
+        season: item.seasonNum,
+        episode: item.subNum,
+        directors: parseDirectors(item),
+        producers: parseProducers(item),
+        adapters: parseAdapters(item),
+        country: upperCase(item.country),
+        date: item.producedate,
+        urls: parseUrls(item)
       })
     })
     return programs
@@ -102,7 +112,39 @@ function parseCategory(item) {
     : []
 }
 
-function parseIcon(item) {
+function parseDirectors(item) {
+  if (!item.cast || !item.cast.director) return [];
+  return item.cast.director
+    .replace('und', ',')
+    .split(',')
+    .map(i => i.trim());
+}
+
+function parseProducers(item) {
+  if (!item.cast || !item.cast.producer) return [];
+  return item.cast.producer
+    .replace('und', ',')
+    .split(',')
+    .map(i => i.trim())
+}
+
+function parseAdapters(item) {
+  if (!item.cast || !item.cast.adaptor) return [];
+  return item.cast.adaptor
+    .replace('und', ',')
+    .split(',')
+    .map(i => i.trim())
+}
+
+function parseUrls(item) {
+  // currently only a imdb id is returned by the api, thus we can construct the url here
+  if (!item.externalIds) return [];
+  return JSON.parse(item.externalIds)
+    .filter(externalId => externalId.type === 'imdb' && externalId.id)
+    .map(externalId => ({ system: 'imdb', value: `https://www.imdb.com/title/${externalId.id}` }))
+}
+
+function parseImage(item) {
   if (!Array.isArray(item.pictures) || !item.pictures.length) return null
 
   return item.pictures[0].href
@@ -135,7 +177,7 @@ function fetchCookieAndToken() {
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-origin',
         'x-requested-with': 'XMLHttpRequest',
-        Referer: 'https://api.prod.sngtv.magentatv.de/EPG/',
+        Referer: 'https://web.magentatv.de/',
         'Referrer-Policy': 'strict-origin-when-cross-origin'
       },
       body: '{"terminalid":"00:00:00:00:00:00","mac":"00:00:00:00:00:00","terminaltype":"WEBTV","utcEnable":1,"timezone":"Etc/GMT0","userType":3,"terminalvendor":"Unknown"}',

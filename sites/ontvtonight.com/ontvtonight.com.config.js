@@ -134,6 +134,7 @@ module.exports = {
             let name = $(el).find('center > a:eq(1)').text()
             name = name.replace(/\-\-/gi, '-')
             const url = $(el).find('center > a:eq(1)').attr('href')
+            if (!url) return
             const [, number, slug] = url.match(/\/(\d+)\/(.*)\.html$/)
 
             channels.push({
@@ -174,5 +175,5 @@ function parseDescription($item) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $('#content > div > div > div.span6 > table > tbody > tr').toArray()
+  return $('#content > div > div > div > table > tbody > tr').toArray()
 }
