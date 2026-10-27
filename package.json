@@ -51,6 +51,7 @@
     "@octokit/plugin-paginate-rest": "^14.0.0",
     "@octokit/plugin-rest-endpoint-methods": "^17.0.0",
     "@stylistic/eslint-plugin": "^5.10.0",
+    "@swc-node/register": "^1.12.1",
     "@swc/jest": "^0.2.36",
     "@types/cli-progress": "^3.11.6",
     "@types/fs-extra": "^11.0.4",
@@ -103,14 +104,15 @@
     "tabletojson": "^4.1.12",
     "tough-cookie": "^4.1.4",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.20.0",
-    "@swc-node/register": "^1.12.1",
-    "@swc/core": "^1.16.18"
+    "typescript-eslint": "^8.20.0"
   },
   "overrides": {
     "esbuild": "0.23.1"
   },
   "engines": {
     "node": ">=18.18.0"
+  },
+  "devDependencies": {
+    "@swc/core": "1.15.33"
   }
 }

@@ -1,1 +1,206 @@
-[{"channelId":"UID0118","duration":20,"programReferenceNumber":"51632189","programScheduleStart":"2023-12-12T23:55:00.000Z","programScheduleEnd":"2023-12-13T00:15:00.000Z","onRewind":false,"scheduleTrailId":202312052657806,"fetchOnRewind":true,"category":"C.News","subCategory":"C.Magazine","program":{"actors":[],"VCHIP":"","blacklist":false,"blacklistInterval":0,"blacklistOTT":false,"blacklistOTTInterval":0,"catchupGracePeriod":0,"category":"C.News","description":"Le journal de vivre ici.","director":"","disableNPVR":false,"episodeNumber":null,"episodeTitle":"","extRatingCodes":"","facebookObjID":"","posterFileName":"250_250_4B990CC58066A7B2A660AFA0BDDE5C41.jpg","programReferenceNumber":"51632189","programType":"NE","releaseYear":null,"seasonNumber":null,"seriesGID":"","seriesID":"","subCategory":"C.Magazine","title":"Le 22h30","trueDuration":20,"supportForVisuallyImpaired":false,"supportForHearingImpaired":true,"translatedCategory":{"fr":"Info","nl":"Nieuws"},"translatedSubCategory":{"fr":"Magazine","nl":"Magazine"}}}]
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 2,
+    "containers": [
+      {
+        "id": "1154",
+        "layout": "CHANNEL_ITEM",
+        "metadata": {
+          "channelId": 1154
+        },
+        "containers": [
+          {
+            "id": "39090043",
+            "layout": "CONTENT_ITEM",
+            "actions": [
+              {
+                "key": "onClick",
+                "uri": "/CONTENT/DETAIL/PROGRAM/39090043",
+                "targetType": "DETAILS_PAGE"
+              }
+            ],
+            "metadata": {
+              "contentId": 39090043,
+              "externalId": "2026101814363",
+              "contentType": "PROGRAM",
+              "title": "Bumba",
+              "longDescription": "Peuterprogramma waarin het clowntje Bumba zijn kunstjes vertoond in het circus. Daarbij wordt hij bijgestaan door zijn allerbeste vriendje Bumbalu. Het tweetal heeft ook een hoop andere circusvriendjes, zoals Kiwi, Tumbi en Nanadu, waarmee ze een hoop leuke avonturen beleven.",
+              "shortDescription": "Peuterprogramma waarin het clowntje Bumba zijn kunstjes vertoond in het circus. Daarbij wordt hij bijgestaan door zijn allerbeste vriendje Bumbalu. Het tweetal heeft ook een hoop andere circusvriendjes, zoals Kiwi, Tumbi en Nanadu, waarmee ze een hoop leuke avonturen beleven.",
+              "startTime": 1793077500000,
+              "isCopyProtected": true,
+              "extendedMetadata": {
+                "supportForVisuallyImpaired": false,
+                "supportForHearingImpaired": false,
+                "images": {
+                  "landscapeBackground": "250_250_9BB66B26ABED50DCA0A1509FE2481572.jpg",
+                  "landscapePoster": "250_250_9BB66B26ABED50DCA0A1509FE2481572.jpg"
+                },
+                "channelLanguage": "nld",
+                "CUTVAvailableHours_ANDROIDMOBILE": 168,
+                "CUTVAvailableHours_WEB": 168,
+                "keywords": "animated,children,preschool,meta_hqposter",
+                "cuTV_IsBlacklisted": false,
+                "assetIdentifier": "6f914515-6e6a-4214-93c6-9675bc8176e2",
+                "CUTVAvailableHours_ANDROIDSTB": 168,
+                "cuTV_BlacklistGracePeriod": 0,
+                "wonId": "1341482770527",
+                "CUTVAvailableHours_STB": 168,
+                "CUTVAvailableHours_TVOSAPPLETV": 168,
+                "CUTVAvailableHours_AIRPLAY": 168,
+                "CUTVAvailableHours_CHROMECAST": 168,
+                "CUTVAvailableHours_WEBSAFARI": 168,
+                "cuTV_BlacklistDelay": 604800,
+                "filterTags": {
+                  "swimLaneFlags": "meta_hqposter"
+                },
+                "CUTVAvailableHours_IOSMOBILE": 168
+              },
+              "copyProtections": [
+                {
+                  "securityCode": "01",
+                  "securityOption": "00000000"
+                },
+                {
+                  "securityCode": "02",
+                  "securityOption": "00000001"
+                },
+                {
+                  "securityCode": "03",
+                  "securityOption": "00000000"
+                },
+                {
+                  "securityCode": "04",
+                  "securityOption": "00000001"
+                }
+              ],
+              "episodeTitle": "Bumba tovert zijn neus",
+              "episodeNumber": 60,
+              "country": "be",
+              "year": 2022,
+              "genres": [
+                "Cartoon"
+              ],
+              "season": 1,
+              "pcLevel": 0,
+              "pcExtendedRatings": [],
+              "seriesId": "415910",
+              "duration": 300,
+              "pictureUrl": "250_250_9BB66B26ABED50DCA0A1509FE2481572.jpg",
+              "isGeoBlocked": true,
+              "actors": [
+                "Patrick Maillard",
+                "Dirk Verbeeck",
+                "Britt Van Der BorghtVertelstem"
+              ],
+              "directors": [
+                "Serge Leurs"
+              ],
+              "airingStartTime": 1793077500000,
+              "airingEndTime": 1793077800000,
+              "episodeId": 60,
+              "isRecordable": true,
+              "isStartOver": true,
+              "isCatchUp": true,
+              "isBlackAndWhiteProgram": false,
+              "subcategory": "Kids",
+              "isPlatformBlacklisted": false,
+              "programId": "004159108025"
+            },
+            "assets": [],
+            "channel": {
+              "channelId": 1154,
+              "channelName": "Ketnet"
+            }
+          },
+          {
+            "id": "39287326",
+            "layout": "CONTENT_ITEM",
+            "actions": [
+              {
+                "key": "onClick",
+                "uri": "/CONTENT/DETAIL/PROGRAM/39287326",
+                "targetType": "DETAILS_PAGE"
+              }
+            ],
+            "metadata": {
+              "contentId": 39287326,
+              "externalId": "2026102623000",
+              "contentType": "PROGRAM",
+              "title": "Volgend programma om 06:00",
+              "longDescription": ".",
+              "shortDescription": ".",
+              "startTime": 1793055600000,
+              "isCopyProtected": true,
+              "extendedMetadata": {
+                "supportForVisuallyImpaired": false,
+                "supportForHearingImpaired": false,
+                "images": {
+                  "landscapeBackground": "250_250_en_BELGACOM_DEFAULT_CAT_defaultepg.jpg",
+                  "landscapePoster": "250_250_en_BELGACOM_DEFAULT_CAT_defaultepg.jpg"
+                },
+                "channelLanguage": "nld",
+                "CUTVAvailableHours_ANDROIDMOBILE": 168,
+                "CUTVAvailableHours_WEB": 168,
+                "cuTV_IsBlacklisted": false,
+                "CUTVAvailableHours_ANDROIDSTB": 168,
+                "cuTV_BlacklistGracePeriod": 0,
+                "CUTVAvailableHours_STB": 168,
+                "CUTVAvailableHours_TVOSAPPLETV": 168,
+                "CUTVAvailableHours_AIRPLAY": 168,
+                "CUTVAvailableHours_CHROMECAST": 168,
+                "CUTVAvailableHours_WEBSAFARI": 168,
+                "cuTV_BlacklistDelay": 0,
+                "filterTags": {},
+                "CUTVAvailableHours_IOSMOBILE": 168
+              },
+              "copyProtections": [
+                {
+                  "securityCode": "01",
+                  "securityOption": "00000000"
+                },
+                {
+                  "securityCode": "02",
+                  "securityOption": "00000001"
+                },
+                {
+                  "securityCode": "03",
+                  "securityOption": "00000000"
+                },
+                {
+                  "securityCode": "04",
+                  "securityOption": "00000001"
+                }
+              ],
+              "genres": [
+                "Filler"
+              ],
+              "pcLevel": 1,
+              "pcExtendedRatings": [],
+              "duration": 10800,
+              "pictureUrl": "250_250_en_BELGACOM_DEFAULT_CAT_defaultepg.jpg",
+              "isGeoBlocked": true,
+              "airingStartTime": 1793055600000,
+              "airingEndTime": 1793066400000,
+              "isRecordable": true,
+              "isStartOver": true,
+              "isCatchUp": true,
+              "isBlackAndWhiteProgram": false,
+              "subcategory": "Other",
+              "isPlatformBlacklisted": false,
+              "programId": "66232216"
+            },
+            "assets": [],
+            "channel": {
+              "channelId": 1154,
+              "channelName": "Ketnet"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1793086500261
+}

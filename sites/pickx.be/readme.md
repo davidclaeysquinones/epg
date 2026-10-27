@@ -1,6 +1,6 @@
 # pickx.be
 
-https://www.pickx.be/fr/television/programme-tv
+https://tv.pickx.be/fr/television/programme-tv
 
 ### Download the guide
 
